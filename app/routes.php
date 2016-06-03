@@ -11,28 +11,8 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
-
-Route::get('/resume', function() 
-{
-    return 'This is my resume';
-});
-
-Route::get('/portfolio', function()
-{
-    return 'This is my portfolio';
-});
-
-Route::get('/rolldice/{guess}', function($guess)
-{
-    $data = array('number' => mt_rand(1, 6), 'guess' => $guess);
-    if ($data['number'] == $data['guess']) {
-        echo "YOU ARE CORRECT";
-    } else {
-        echo "YOU ARE WRONG";
-    }
-    return View::make('roll-dice')->with($data);
-});
+Route::get('/', 'HomeController@showWelcome');
+Route::get('/resume', 'HomeController@showResume');
+Route::get('/portfolio', 'HomeController@showPortfolio');
+Route::get('/rolldice/{guess}', 'HomeController@rollDice');
+Route::resource('posts', 'PostsController');
