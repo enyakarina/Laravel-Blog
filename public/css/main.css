@@ -1,0 +1,12 @@
+body {
+    background-color: lightblue;
+    text-align: left;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: white;
+}
