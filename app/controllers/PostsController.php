@@ -9,7 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::all();
+		$posts = Post::paginate(5);
 		return View::make('posts.index')->with('posts', $posts);
 	}
 
@@ -35,12 +35,15 @@ class PostsController extends \BaseController {
 		$post = new Post();
 		$post->title = Input::get('title');
 		$post->content = Input::get('content');
-		$post->content = Input::get('image');
+		//this creates the validator
+		$validator = Validator::make(Input::all(), Post::$rules);
 
-		if($post->save()) {
+		if($validator->fails()) {
+			Session::flash('errorMessage', 'Oops, there seems to be a problem creating your post!');
+			return Redirect::back()->withInput()->withErrors($validator);
+		}else if($post->save()) {
+			Session::flash('successMessage', 'You have successfully created the post!');
 			return Redirect::action('PostsController@show', $post->id);
-		} else {
-			return Redirect::back()->withInput();
 		}
 	}
 
@@ -66,7 +69,8 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return "Edit your blog posts: ";
+			$post = Post::find($id);
+			return View::make('posts.edit')->with('post', $post);
 	}
 
 
@@ -78,7 +82,20 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return "Edit your blog posts: ";
+		$post = Post::find($id);
+		$post->title = Input::get('title');
+		$post->content = Input::get('content');
+		//this creates the validator
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		if($validator->fails()) {
+			Session::flash('errorMessage', 'Oops, there seems to be a problem updating your post!');
+			return Redirect::back()->withInput()->withErrors($validator);
+		}else if($post->save()) {
+			Session::flash('successMessage', 'You have successfully updated the post!');
+			return Redirect::action('PostsController@show', $post->id);
+		}
+		
 	}
 
 
