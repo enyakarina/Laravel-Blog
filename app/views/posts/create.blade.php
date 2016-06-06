@@ -5,28 +5,30 @@ Create a Blog Post
 @stop
 
 @section('content')
-<div class="container">
-    <h1 class="display-1">Create a New Blog Post</h1>
-    <form action="{{{ action('PostsController@store') }}}" method="POST">
+<h1 class="display-1" id="headerCreateBlog">Create a New Blog Post</h1>
+<div class="container-fluid" id="createBlog">
+    {{ Form::open(array('action' => 'PostsController@store')) }}
 <!--TITLE-->
-        <div class="form-group form-group-lg"> <!-- Name field -->
-            <label class="control-label " for="title">Post Title</label>
-            <input class="form-control" id="title" name="title" type="text" placeholder="Post Title" />
+        <div class="form-group form-group-lg">
+           {{ Form::label('title', 'Title', array('class' => 'control-label')) }}
+           {{ Form::text('title', null, array('placeholder' => 'Post Title', 'class' => 'form-control', 'id' => 'title', 'value' => "{{{ Input:old('title') }}}")) }}
+            {{ $errors->first('title', '<span class="help-block">:message</span>') }}
         </div>
-<!--IMAGE UPLOAD-->
+<!--IMAGE UPLOAD IS A PLACEHOLDER. IT DOES NOT WORK YET!!
         <div class="form-group">
             <input type="file" name="image">
             <p class="help-block"><em>Upload an image.</em></p>
-        </div>
+        </div>-->
 <!--CONTENT-->
         <div class="form-group">
-            <label class="control-label " for="content">Content</label>
-            <textarea class="form-control" cols="40" id="content" name="content" rows="10" placeholder="Dear Blog, today is an awesome day!"></textarea>
+           {{ Form::label('content', 'Content', array('class' => 'control-label')) }}
+           {{ Form::textarea('content', null, array('placeholder' => 'Dear Blog, today is an awesome day!', 'class' => 'form-control', 'id' => 'content', 'cols' => '40', 'rows' => '10', 'value' => "{{{ Input::old('content') }}}")) }}
+            {{ $errors->first('content', '<span class="help-block">:message</span>') }}
         </div>
 <!--SUBMIT-->
          <div class="form-group">
-            <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+            <button class="btn btn-primary submit-button" name="submit" type="submit">Submit</button>
         </div>
-    </form>
+    {{ Form::close() }}
 </div>
 @stop
