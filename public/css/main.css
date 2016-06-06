@@ -1,12 +1,79 @@
 body {
-    background-color: lightblue;
     text-align: left;
+    font-family: helvetica;
+    background-color: rgb(242, 241, 242);
+    color: #ccc;
+    padding-top: 65px;
 }
 
-h2 {
-    text-transform: uppercase;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Londrina Solid', cursive;
+    color: rgb(243, 141, 139);
+}
+
+.postLinks {
+    color: rgb(241, 177, 173);
+}
+
+.postLinks:hover {
+    color: rgb(243, 141, 139);
+}
+
+.filler {
+    height: 100%;
 }
 
 .container {
     background-color: white;
+    height: 100%;
+}
+
+#createBlog, #editBlog {
+    background-color: rgb(241, 177, 173);
+    margin-top: 3%;
+    padding: 5%;
+}
+
+#headerCreateBlog, #headerEditBlog {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(243, 141, 139);
+}
+
+#title {
+    width: 75%;
+}
+
+.help-block {
+    color: red;
+}
+
+.datePosted {
+    color: rgb(135, 211, 220);
+    font-weight: bold;
+}
+
+.submit-button, .submit-button:hover {
+    text-transform: uppercase;
+    background-color: rgb(242, 241, 242);
+    color: rgb(243, 141, 139);
+    border: 3px solid rgb(243, 141, 139);
+}
+
+.submit-button:hover {
+    background-color: rgba(241, 177, 173, 0.5);
+}
+
+@media (max-width: 100%) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.navbar {
+    background-color: rgb(135, 211, 220);
+}
+
+li{
+    color: white;
 }
