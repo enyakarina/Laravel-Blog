@@ -5,12 +5,13 @@
 @stop
 
 @section('content')
-    <h1>Browse through all the posts here</h1>
+    <div class="container postIndex">
+    <h1>Post Archives</h1>
     @foreach($posts as $post)
-        <div class="container">
-            <h3><a href="{{{action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h3>
-            <p>{{{ $post->content }}}</p>
-            <p>Posted on: {{{ $post->created_at }}}</p>
-        </div>
+        <h3><a href="{{{action('PostsController@show', $post->id) }}}" class="postLinks">{{{ $post->title }}}</a></h3>
+        <p>{{{ $post->content }}}</p>
+        <p class="datePosted"><small>Posted on: {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A') }}}</small></p>
     @endforeach
+        {{ $posts->links() }}
+    </div>
 @stop
