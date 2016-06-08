@@ -2,6 +2,16 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+    {
+        $this->beforeFilter('auth', array(
+        	'except' => array(
+        		'index', 
+        		'show'
+        	)
+        ));
+    }
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -35,6 +45,7 @@ class PostsController extends \BaseController {
 		$post = new Post();
 		$post->title = Input::get('title');
 		$post->content = Input::get('content');
+		$post->user_id = Auth::user()->id;
 		//this creates the validator
 		$validator = Validator::make(Input::all(), Post::$rules);
 
@@ -85,6 +96,8 @@ class PostsController extends \BaseController {
 		$post = Post::find($id);
 		$post->title = Input::get('title');
 		$post->content = Input::get('content');
+		$post->user_id = Auth::user()->id;
+
 		//this creates the validator
 		$validator = Validator::make(Input::all(), Post::$rules);
 
@@ -107,7 +120,9 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return "Delete a blog post: ";
+		$post = Post::find($id);
+        $post->delete();
+        return Redirect::action('PostsController@index');
 	}
 
 

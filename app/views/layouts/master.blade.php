@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-@include('partials.nav-bar')
+
+@if (Auth::guest())
+    @include('partials.guestnav')
+@elseif(Auth::user())
+    @include('partials.usernav')
+@endif
+
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -12,11 +21,26 @@
 @if (Session::has('successMessage'))
     <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
 @endif
+
 @if (Session::has('errorMessage'))
     <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
 @endif
 
+@if (Session::has('signupError'))
+    <div class="alert alert-danger">{{{ Session::get('signupError') }}}</div>
+@endif
+
+@if (Session::has('signupSuccess'))
+    <div class="alert alert-success">{{{ Session::get('signupSuccess') }}} </div>
+@endif
+
+@if (Session::has('loginError'))
+    <div class="alert alert-danger">{{{ Session::get('loginError') }}} </div>
+@endif
+
 @yield('content')
+
+@yield('bottom-script')
 
 @extends('partials.footer')
 

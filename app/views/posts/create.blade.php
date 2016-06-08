@@ -6,7 +6,7 @@ Create a Blog Post
 
 @section('content')
 <h1 class="display-1" id="headerCreateBlog">Create a New Blog Post</h1>
-<div class="container-fluid" id="createBlog">
+<div class="container-fluid col-lg-12 col-md-12 col-xs-12" id="createBlog">
     {{ Form::open(array('action' => 'PostsController@store')) }}
 <!--TITLE-->
         <div class="form-group form-group-lg">

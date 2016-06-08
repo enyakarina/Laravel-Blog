@@ -7,7 +7,7 @@ Edit a Blog Post
 @section('content')
 
 <h1 class="display-1" id="headerEditBlog">Edit an Existing Blog Post</h1>
-<div class="container-fluid" id="editBlog">
+<div class="container-fluid col-lg-12 col-md-12 col-xs-12" id="editBlog">
     {{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
 <!--TITLE-->
         <div class="form-group form-group-lg">
