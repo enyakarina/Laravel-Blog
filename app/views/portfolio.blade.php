@@ -15,7 +15,7 @@ Kari's Portfolio
         <div class="thumbnail">
           <img src="..." alt="">
           <div class="caption">
-            <h3>Whack-An-Mole</h3>
+            <h3>Whack-A-Mole</h3>
             <p>This is one of the projects I enjoyed building the most. You click start and try to get as many points as you can by clicking on the dogs that pop up in the circles!</p>
             <p><a href="#" class="btn btn-primary" role="button">Check it out</a></p>
             <p>
