@@ -11,8 +11,6 @@
         <p><strong><small>Written by: {{{ $post->user->username }}}</small></strong></p>
         @if(Auth::user()->id == $post->user->id)
         <p><a href="{{{ action('PostsController@edit', $post->id) }}}">Edit Your Post</a></p>
-        <button id="delete-post-btn" class="btn btn-danger">Delete this post!</button>
-        @endif
 
         {{-- This creates an empty form that points to the destroy method on the PostsController --}}
         {{-- There is nothing visible to the user here, but we can target this form with Javascript --}}
@@ -21,7 +19,9 @@
             'id'     => 'delete-post-form',
             'method' => 'DELETE',
         ]) }}
+        <button id="delete-post-btn submit-button" class="btn btn-danger">Delete this post!</button>
         {{ Form::close() }}
+        @endif
     </div>
 @stop
 
