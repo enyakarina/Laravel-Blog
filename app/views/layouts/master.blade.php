@@ -38,6 +38,22 @@
     <div class="alert alert-danger">{{{ Session::get('loginError') }}} </div>
 @endif
 
+@if (Session::has('updateProfileError'))
+    <div class="alert alert-danger">{{{ Session::get('updateProfileError') }}} </div>
+@endif
+
+@if (Session::has('editError'))
+    <div class="alert alert-danger">{{{ Session::get('editError')}}} </div>
+@endif
+
+@if (Session::has('EditPostError'))
+    <div class="alert alert-danger">{{{ Session::get('EditPostError') }}} </div>
+@endif
+
+@if (Session::has('deleteError'))
+    <div class="alert alert-danger">{{{ Session::get('deleteError') }}} </div>
+@endif
+
 @yield('content')
 
 @yield('bottom-script')
