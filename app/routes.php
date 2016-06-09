@@ -33,10 +33,16 @@ Route::post('/signup', 'UsersController@userSignup');
 
 #Profile
 Route::get('/users/{profile}', 'ProfilesController@showProfile');
-Route::get('/users/{profile}/edit', 'ProfilesController@edit');
 
-#Profile Info
-Route::post('/users/{profile}/edit', 'ProfilesController@store');
+#Create Profile Info..
+Route::get('/users/{profile}/create', 'ProfilesController@create');
+
+#Save Profile Info
+Route::post('/users/{profile}/create', 'ProfilesController@store');
+
+#Edit Profile
+Route::get('/users/{profile}/edit', 'ProfilesController@edit');
+Route::post('/users/{profile}/update', 'ProfilesController@update');
 
 #Posts
 Route::resource('posts', 'PostsController');
