@@ -80,8 +80,14 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-			$post = Post::find($id);
+		$post = Post::find($id);
+		$user = User::find($post->user_id);
+		if (Auth::user()->id == $user->id) {
 			return View::make('posts.edit')->with('post', $post);
+		} else {
+			Session::flash('EditPostError', 'You cannot edit someone else\'s post, but you can look at it!');
+			return Redirect::action('PostsController@show', $post->id);
+		}
 	}
 
 
@@ -121,9 +127,13 @@ class PostsController extends \BaseController {
 	public function destroy($id)
 	{
 		$post = Post::find($id);
-        $post->delete();
-        return Redirect::action('PostsController@index');
+		$user = User::find($post->user_id);
+        if (Auth::user()->id == $user->id) {
+	        $post->delete();
+	        return Redirect::action('PostsController@index');
+	    } else {
+	    	Session::flash('deleteError', 'You cannot delete someone else\'s post!');
+	    	return Redirect::action('PostsController@show', $post->id);
+	    }
 	}
-
-
 }
