@@ -2,12 +2,12 @@ body {
     text-align: left;
     font-family: helvetica;
     background-color: rgb(242, 241, 242);
-    padding-top: 65px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Londrina Solid', cursive;
     color: rgb(243, 141, 139);
+    font-size: 3em;
 }
 
 .postLinks {
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     background-color: white;
-    height: 100%;
+    padding: 20px;
 }
 
 #createBlog, #editBlog {
@@ -71,8 +71,30 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar {
     background-color: rgb(135, 211, 220);
+    min-height: 60px;
 }
 
-li{
-    color: white;
+ul li a {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Londrina Solid', cursive;
+    color: rgb(243, 141, 139) !important;
+    font-size: 40px;
+}
+
+.profile-description {
+    font-size: 20px;
+}
+
+.username {
+    color: rgb(179, 225, 233);
+}
+
+#showSinglePost {
+    font-size: 20px;
 }
