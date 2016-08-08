@@ -15,8 +15,10 @@ My Profile
         @foreach($user->posts as $post)
         <p class="profile-description"><a href="{{{action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></p>
         @endforeach
-    @if(Auth::user()->id == $user->id)
-        <a href="{{{action('ProfilesController@edit', $user->profile->id) }}}">Edit your profile</a>
+    @if(Auth::user())
+        @if(Auth::user()->id == $user->id)
+            <a href="{{{action('ProfilesController@edit', $user->profile->id) }}}">Edit your profile</a>
+        @endif
     @endif
 </div>
 @stop

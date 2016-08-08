@@ -5,8 +5,8 @@ Login
 @stop
 
 @section('content')
-<h1 class="display-1" id="headerLogin">Login</h1>
-    <div class="container-fluid" id="login">
+<div class="container-fluid" id="login">
+    <h1 class="display-1" id="headerLogin">Login</h1>
     {{ Form::open(array('action' => 'UsersController@userLogin')) }}
 
         <div class="form-group form-group-lg">

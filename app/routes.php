@@ -46,3 +46,15 @@ Route::post('/users/{profile}/update', 'ProfilesController@update');
 
 #Posts
 Route::resource('posts', 'PostsController');
+
+#Whackamole 
+Route::get('/whack', 'HomeController@showWhackamole');
+
+#Simon
+Route::get('/simon', 'HomeController@showSimon');
+
+#Calculator
+Route::get('/calculator', 'HomeController@showCalculator');
+
+#Blog Post Home
+Route::get('/blog', 'HomeController@blogHome');

@@ -1,100 +1,169 @@
-body {
-    text-align: left;
-    font-family: helvetica;
-    background-color: rgb(242, 241, 242);
-}
+/*** COLOR PALETTE 
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Londrina Solid', cursive;
-    color: rgb(243, 141, 139);
-    font-size: 3em;
-}
+white: rgb(253,247,255);
 
-.postLinks {
-    color: rgb(241, 177, 173);
-}
+pink: rgb(255,93,201);
 
-.postLinks:hover {
-    color: rgb(243, 141, 139);
-}
+green: rgb(212,255,0);
 
-.filler {
-    height: 100%;
+grey: rgb(104,119,108);
+
+light blue: rgb(0,214,221);
+
+
+***/
+
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {    
+  background-color: rgb(253,247,255);
+  margin-bottom: 60px;
+  font-family: monospace;
 }
 
 .container {
-    background-color: white;
-    padding: 20px;
+  margin-bottom: 60px;
 }
 
-#createBlog, #editBlog {
-    background-color: rgb(241, 177, 173);
-    margin-top: 3%;
-    padding: 5%;
+/*** NAVIGATION BAR ***/
+.navbar-default {
+  height: 80px;
+  background-color: rgb(0,214,221); 
+} 
+.navbar-default .navbar-nav li a, .navbar-brand {
+  line-height: 40px;
+  color: white;
+  font-size: 20px;
 }
 
-#headerCreateBlog, #headerEditBlog {
+.navbar-default .navbar-brand {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 60px;
+  color: white;
+}
+
+/*** MAIN HOMEPAGE ***/
+#home-header, .home-h2 {
+  font-family: "VT323", Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+.home-h2 {
+  text-align: center;
+}
+.homepage-content {
+  margin: 0 auto 2em auto;
+  padding: 35px 30px;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
+  border: none;
+  min-height: 400px;
+}
+.homepage-container{
+  background-color: rgba(255,93,201,0.5);
+}
+
+
+/*** FOOTER ***/
+.footer {
+  background-color: rgb(0,214,221);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+.footer-text {
     text-align: center;
-    text-transform: uppercase;
-    color: rgb(243, 141, 139);
+    color: white;
+    margin: 0;
 }
 
-#title {
-    width: 75%;
+/*** PORTFOLIO ***/
+
+.portfolio-info {
+  min-height: 228px;
+  border: none;
+  text-align: center;
+  padding: 0px;
 }
 
-.help-block {
-    color: red;
+.portfolioTitle {
+  color: rgb(104,119,108);
+  font-family: "VT323", Helvetica, sans-serif;
 }
 
-.datePosted {
-    color: rgb(135, 211, 220);
-    font-weight: bold;
+.label-danger {
+  background-color: rgb(212,255,0);
+  color: black;
 }
 
-.submit-button, .submit-button:hover {
-    text-transform: uppercase;
-    background-color: rgb(242, 241, 242);
-    color: rgb(243, 141, 139);
-    border: 3px solid rgb(243, 141, 139);
+.label-warning {
+  background-color: rgb(0,214,221);
 }
 
-.submit-button:hover {
-    background-color: rgba(241, 177, 173, 0.5);
+.label-success {
+  background-color: rgb(104,119,108);
 }
 
-@media (max-width: 100%) {
-  body {
-    padding-top: 0px;
-  }
+.label-primary {
+  background-color: rgb(255,93,201);
 }
 
-.navbar {
-    background-color: rgb(135, 211, 220);
-    min-height: 60px;
+.portfolio-button, .portfolio-button:hover {
+  background-color: rgb(253,247,255);
+  border-radius: 0;
+  color: rgb(255,93,201);
+  border: 3px solid rgb(255,93,201);
 }
 
-ul li a {
-    color: #fff !important;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
+/*** BLOG INDEX ***/
+
+.blogPost {
+  background: #fff;
+  margin: 0 auto 2em auto;
+  padding: 35px 30px;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
 }
 
-.navbar-brand {
-    font-family: 'Londrina Solid', cursive;
-    color: rgb(243, 141, 139) !important;
-    font-size: 40px;
+.postContent{
+  font-size: 1em;
+  border-left: 5px dashed #8EE5EE;
+  padding-left: 15px;
 }
 
-.profile-description {
-    font-size: 20px;
+.postTitle {
+  font-size: 2.5em;
+  margin-top: 5px;
+  overflow: hidden;
+  border: none;
+  font: normal 70px/1 "VT323", Helvetica, sans-serif;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-shadow: 5px 5px 0 rgb(104,119,108);
 }
 
-.username {
-    color: rgb(179, 225, 233);
+.postTitleLinks {
+  color: rgb(255,93,201);
 }
 
-#showSinglePost {
-    font-size: 20px;
+a.postTitleLinks:hover{
+  color: rgba(255,93,201,0.7);
+  text-shadow: 5px 5px 0 rgba(104,119,108,0.7);
+  text-decoration: none;
+}
+
+.postLink {
+  font-style: italic;
+  transition: all 0.4s;
+}
+
+.postLink:hover {
+  color: #005c7b;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  cursor: pointer;
 }

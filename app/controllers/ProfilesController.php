@@ -44,7 +44,7 @@ class ProfilesController extends \BaseController
             return Redirect::back()->withInput()->withErrors($validator);
         }else if($profile->save())
             Session::flash('profileSuccess', 'You have successfully updated your profile!');
-                return Redirect::to('ProfilesController@showProfile');
+                return Redirect::to('ProfilesController@showProfile', $profile->user->username);
     }
 
     public function update($id)

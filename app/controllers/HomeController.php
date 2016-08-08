@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return Redirect::to('/posts');
+		return View::make('homepage');
 	}
 
 	public function showResume()
@@ -43,7 +43,22 @@ class HomeController extends BaseController {
 
 	public function showWhackaMole()
 	{
-		return View::make('whackamole');
+		return View::make('whack');
+	}
+
+	public function showSimon()
+	{
+		return View::make('simon');
+	}
+
+	public function showCalculator()
+	{
+		return View::make('calculator');
+	}
+
+	public function blogHome()
+	{
+		return View::make('posts.home');
 	}
 
 }

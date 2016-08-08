@@ -1,0 +1,111 @@
+body {
+    background-image: url(/images/dogbg.png);
+    background-position: fixed;
+    font-family: 'VT323';
+    text-align: center;
+}
+
+#annoying {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    color: red;
+}
+
+@-webkit-keyframes blinker {
+    50% {opacity: 0.0;}
+}
+
+#box4, #box7 { 
+    clear: left;
+    float: left;
+}
+
+.button {
+    background-color: white;
+    border-radius: 10%;
+    font-weight: bold;
+    height: 30px;
+    margin: 10px;
+    width: 50px;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+#clickables {
+    margin: 0 auto;
+    margin-bottom: 3%;
+    width: 150px; 
+}
+
+#container {
+    background-color: white;
+    margin: 0 auto;
+    padding: 3%;
+    width: 600px;
+}
+
+#description {
+    font-size: 1.5em;
+}
+
+#dog {
+    font-size: 4em;
+}
+
+#grid {
+    background-color: white;
+    border-radius: 5%;
+    height: 493px;
+    margin: 0 auto;
+    width: 493px;
+}
+
+.holes {
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 50%;
+    float: left;
+    height: 150px;
+    margin: 5px;
+    position: relative;
+    width: 150px;
+}
+
+.holes:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.selected {
+    background-color: red;
+    background-image: url(/images/dogpop.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.scoreTime {
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 7%;
+    width: 600px;
+}
+
+#score, #timer, #high {
+    float: left;
+    font-size: 2em;
+    margin-bottom: 5%;
+    width: 200px;
+}
+
+.stats {
+    position: relative;
+}
