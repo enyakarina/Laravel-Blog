@@ -9,6 +9,7 @@
 <div class="container-fluid homepage-container">
     <div class="page-header">
         <h1 id="home-header">Hello, I'm Kari Palomino.</h1>
+        <h3 id="home-sub">Welcome to my page!</h3>
     </div>
     <div class="col-xs-12 col-md-6 col-lg-6" id="contentOne">
         <div class="thumbnail homepage-content">
