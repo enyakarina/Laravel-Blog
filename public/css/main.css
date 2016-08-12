@@ -10,6 +10,8 @@ grey: rgb(104,119,108);
 
 light blue: rgb(0,214,221);
 
+header blue: rgb(37,151,221);
+
 
 ***/
 
@@ -22,7 +24,7 @@ html {
 body {    
   background-color: rgb(253,247,255);
   margin-bottom: 60px;
-  font-family: monospace;
+  font-family: helvetica;
 }
 
 .container {
@@ -51,8 +53,8 @@ body {
 }
 
 /*** MAIN HOMEPAGE ***/
+
 #home-header, .home-h2 {
-  font-family: "VT323", Helvetica, sans-serif;
   font-size: 3em;
 }
 
@@ -64,12 +66,42 @@ body {
   padding: 35px 30px;
   box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
   border: none;
-  min-height: 400px;
+  min-height: 482px;
 }
 .homepage-container{
-  background-color: rgba(255,93,201,0.5);
+  background-color: white;
 }
-
+.page-header h1{
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Londrina Solid';
+  font-size: 5em;
+}
+.page-header h3{
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Londrina Solid';
+}
+.home-boxes p {
+  border-left: 3px solid red;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.home-h2{
+  font-family: 'Londrina Solid';
+  color: rgb(37,151,221);
+}
+.popup-text {
+  color: #337ab7;
+}
+.contact-list {
+  font-size: 20px;
+  list-style: none;
+  padding: 5px;
+}
+.fa-star {
+  color: red;
+}
 
 /*** FOOTER ***/
 .footer {
