@@ -7,41 +7,40 @@ Kari's Portfolio
 @section('content')
 <div class="container">
 <!--HEADER-->
-    <div class="page-header">
-    <h1>Coding Projects</h1>
+    <div class="page-header portfolio-header">
+    <h1 id="portfolio-h1">Coding Projects</h1>
     </div>
     <!--BOX 1-->
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="thumbnail portfolio-info">
+        <img src="/images/hammer.svg" alt="hammer" class="portfolio-images">
           <div class="caption">
-            <h3 class="portfolioTitle">Whack-A-Mole</h3>
+            <a href="/whack"><h3 class="portfolioTitle">Whack-An-Annoying-Dog</h3></a>
             <p>This is one of the projects I enjoyed building the most. You click start and try to get as many points as you can by clicking on the dogs that pop up in the circles!</p>
-            <p><a href="/whack" class="btn btn-primary portfolio-button" role="button">Check it out</a></p>
-            <p>
-            <span class="label label-primary">JQuery</span> <span class="label label-success">HTML5</span> <span class="label label-danger">CSS3</span></p>
+            <span class="label label-warning">JavaScript</span>
+            <span class="label label-primary">JQuery</span> 
+            <span class="label label-success">HTML5</span> <span class="label label-danger">CSS3</span></p>
           </div>
         </div>
       </div>
     <!--BOX 2-->
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="thumbnail portfolio-info">
+        <a href="/simon"><img src="/images/simon.svg" alt="simonsays" class="portfolio-images"></a>
           <div class="caption">
-            <h3 class="portfolioTitle">Simon Says</h3>
+            <a href="/simon"><h3 class="portfolioTitle">Simon Says</h3></a>
             <p>This was one of the most difficult projects for me. Being able to complete it was an awesome feeling.</p>
-            <p><a href="/simon" class="btn btn-primary portfolio-button" role="button">Check it out</a></p>
-            <p>
-            <span class="label label-primary">JQuery</span> <span class="label label-success">HTML5</span> <span class="label label-danger">CSS3</span></p>
+            <span class="label label-warning">JavaScript</span> <span class="label label-success">HTML5</span> <span class="label label-danger">CSS3</span></p>
           </div>
         </div>
       </div>
     <!--BOX 3-->
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="thumbnail portfolio-info">
+        <a href="/calculator"><img src="/images/calculator.svg" alt="calculator" class="portfolio-images"></a>
           <div class="caption">
-            <h3 class="portfolioTitle">JavaScript Calculator</h3>
+            <a href="/calculator"><h3 class="portfolioTitle">JavaScript Calculator</h3></a>
             <p>This is a simple calculator coded in vanilla javascipt</p>
-            <p><a href="/calculator" class="btn btn-primary portfolio-button" role="button">Check it out</a></p>
-            <p>
             <span class="label label-warning">JavaScript</span> <span class="label label-success">HTML5</span> <span class="label label-danger">CSS3</span></p>
           </div>
         </div>
@@ -49,11 +48,10 @@ Kari's Portfolio
       <!--BOX 4-->
       <div class="col-sm-12 col-md-6 col-lg-6">
         <div class="thumbnail portfolio-info">
+        <a href="/posts"><img src="/images/pencil.svg" alt="pencil" class="portfolio-images"></a>
           <div class="caption">
-            <h3 class="portfolioTitle">Blog</h3>
+            <a href="/posts"><h3 class="portfolioTitle">Blog</h3></a>
             <p>Created a fully functioning blog application using the Laravel Framework.</p>
-            <p><a href="/posts" class="btn btn-primary portfolio-button" role="button">Check it out</a></p>
-            <p>
             <span class="label label-info">Laravel</span> <span class="label label-success">HTML5</span> <span class="label label-danger">CSS3</span></p>
           </div>
         </div>

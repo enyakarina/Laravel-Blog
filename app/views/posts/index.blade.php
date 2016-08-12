@@ -6,6 +6,9 @@
 
 @section('content')
     <div class="container postIndex col-lg-12 col-md-12 col-xs-12">
+    <div class="page-header posts-index-header">
+        <h1 class="post-index-h1">All Blog Posts</h1>
+    </div>
     @foreach($posts as $post)
     <div class="blogPost">
         <h1 class="postTitle"><a href="{{{action('PostsController@show', $post->id) }}}" class="postTitleLinks">{{{ $post->title }}}</a></h1>

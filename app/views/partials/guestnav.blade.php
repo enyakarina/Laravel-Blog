@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" aria-expanded="true">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
-        <li><a href="/resume">Resume</a></li>
+        <li><a href="/personal">Personal</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
         <li><a href="/posts">Open Blog</a></li>
       </ul>
