@@ -29,7 +29,7 @@ html {
 }
 body {    
   margin-bottom: 60px;
-  font-family: helvetica;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -184,6 +184,9 @@ body {
 }
 
 /*** BLOG INDEX ***/
+#blog-jumbo {
+  margin-top: 10%;
+}
 .page-header .post-index-h1 {
   color: rgb(230,76,60);
   padding-top: 0px;
@@ -232,6 +235,21 @@ a.postTitleLinks:hover{
   cursor: pointer;
 }
 
+/*SINGLE BLOG POST */
+#showSinglePost {
+  text-align: center;
+  margin-top: 5%;
+  border-top: 20px solid rgb(230,76,60);
+  border-bottom: 20px solid rgb(230,76,60);
+}
+.italic {
+  font-style: italic;
+}
+.post-content {
+  font-size: 20px;
+
+}
+
 /*PERSONAL CSS */
 .personal-container {
   padding-left: 0px;
@@ -251,7 +269,7 @@ a.postTitleLinks:hover{
 .personal-box {
   text-align: center;
   font-size: 18px;
-  min-height: 450px;
+  min-height: 500px;
 }
 .personal-icons {
   max-width: 150px;

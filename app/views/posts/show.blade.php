@@ -5,9 +5,11 @@
 @stop
 
 @section('content')
+<div class="container-fluid">
     <div class="container col-lg-12 col-md-12 col-xs-12" id="showSinglePost">
         <h1>{{{ $post->title }}}</h1>
-        <p>{{{ $post->content }}}</p>
+        <h4 class="italic">Written on {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A') }}}</h4>
+        <p class="post-content">{{{ $post->content }}}</p>
         <p><strong><small>Written by: {{{ $post->user->username }}}</small></strong></p>
         @if(Auth::user())
             @if(Auth::user()->id == $post->user->id)
@@ -25,6 +27,7 @@
             @endif
         @endif
     </div>
+</div>
 @stop
 
 @section('bottom-script')

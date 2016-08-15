@@ -16,6 +16,6 @@
         <p class="datePosted"><small>Posted on: {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A') }}}</small></p>
     </div>
     @endforeach
-        {{ $posts->links() }}
+        {{ $posting->links() }}
     </div>
 @stop

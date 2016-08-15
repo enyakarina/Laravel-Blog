@@ -19,8 +19,9 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::paginate(5);
-		return View::make('posts.index')->with('posts', $posts);
+		$posts = Post::orderBy('id', 'DESC')->get();
+		$posting = Post::paginate(10);
+		return View::make('posts.index')->with(['posts' => $posts, 'posting' => $posting]);
 	}
 
 
@@ -68,6 +69,9 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		$post = Post::find($id);
+		if($post == null) {
+			App::abort(404);
+		}
 		return View::make('posts.show')->with('post', $post);
 	}
 

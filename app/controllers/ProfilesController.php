@@ -6,8 +6,10 @@ class ProfilesController extends \BaseController
     public function showProfile($username)
     {
         $user = User::with('profile')->whereUsername($username)->first();
-
-        if($user->profile == null) {
+        if($user == null) {
+            App::abort(404);
+        }
+        else if($user->profile == null) {
             return Redirect::action('ProfilesController@create', $user->username);
         } else {
             return View::make('profile.profile')->with('user', $user);
