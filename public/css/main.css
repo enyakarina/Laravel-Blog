@@ -288,3 +288,57 @@ a.postTitleLinks:hover{
 .personal-music {
   background-color: rgb(230,76,60);
 }
+
+/*** LOGIN & SIGNUP ***/
+
+.login-form {
+  margin-top: 20px;
+}
+#login-h1 {
+  padding-top: 0px;
+}
+.form-group-lg .form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 4px solid rgb(230,76,60);
+  border-radius: 0px;
+  width: 300px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  text-align: center;
+  color: rgb(0,150,230);
+  font-size: 20px;
+}
+.loginButton {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  background-color: rgb(113,194,133);
+  border: none;
+  border-radius: 0px; 
+}
+.loginButton:hover {
+  background-color: rgba(113,194,133,0.85);
+}
+.signup-error{
+  text-align: center;
+}
+
+/** Create a Post **/
+.create-post {
+  border: none;
+}
+
+/** PROFILE **/
+.username {
+  color: rgb(230,76,60);
+}
+#user-header {
+  padding-top: 0px;
+}
+#profile-container {
+  text-align: center;
+}

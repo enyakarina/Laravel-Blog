@@ -14,7 +14,7 @@ class UsersController extends \BaseController
 
         if(Auth::attempt(array('username' => $username, 'password' => $password))) 
         {
-            return Redirect::intended('/posts');
+            return Redirect::intended();
         } else {
             Session::flash('loginError', 'Username or Password is incorrect!');
             return Redirect::back()->withInput();

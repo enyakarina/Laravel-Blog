@@ -15,10 +15,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" aria-expanded="true">
       <ul class="nav navbar-nav">
         <li><a href="/logout">Logout</a></li>
-        <li><a href="/posts">Post Archives</a></li>
+        <li><a href="/posts">All Posts</a></li>
         <li><a href="/posts/create">New Post</a></li>
         <li><a href="/users/{{{ Auth::user()->username }}}"> Profile</a></li>
-        <li><a href="/">homepage</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

@@ -5,8 +5,11 @@ Create a Blog Post
 @stop
 
 @section('content')
-<h1 class="display-1" id="headerCreateBlog">Create a New Blog Post</h1>
 <div class="container-fluid col-lg-12 col-md-12 col-xs-12" id="createBlog">
+    <div class="container login-form">
+        <div class="page-header">
+        <h1 id="login-h1">Create a New Post!</h1>
+        </div>
     {{ Form::open(array('action' => 'PostsController@store')) }}
 <!--TITLE-->
         <div class="form-group form-group-lg">
@@ -26,9 +29,10 @@ Create a Blog Post
             {{ $errors->first('content', '<span class="help-block">:message</span>') }}
         </div>
 <!--SUBMIT-->
-         <div class="form-group">
-            <button class="btn btn-primary submit-button" name="submit" type="submit">Submit</button>
+        <div class="form-group">
+            <button class="btn btn-primary submit-button loginButton" name="submit" type="submit">Submit!</button>
         </div>
     {{ Form::close() }}
+    </div>
 </div>
 @stop
