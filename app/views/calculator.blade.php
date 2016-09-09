@@ -7,7 +7,7 @@
 
 <body>
 <div id="calculator">
-  <p id="title">Kari's Basic Looking Calculator</p>
+  <p id="title">JavaScript Calculator</p>
   <div class="result">
     <p></p>
   </div>

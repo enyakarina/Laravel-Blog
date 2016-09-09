@@ -20,6 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <!-- FONT AWESOME ICONS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- CUSTOM CSS FILE -->

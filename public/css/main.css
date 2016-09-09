@@ -1,25 +1,14 @@
 /*** COLOR PALETTE 
 
-white: rgb(253,247,255);
+white: rgb(255,255,255);
 
-pink: rgb(255,93,201);
+black: rgb(0,0,0);
 
-green: rgb(212,255,0);
+limey: rgb(209,231,81);
 
-grey: rgb(104,119,108);
+electric blue: rgb(77,188,233);
 
-light blue: rgb(0,214,221);
-
-new blue: rgb(0,150,230);
-
-new green: rgb(113,194,133);
-
-new red: rgb(230,76,60);
-
-new yellow: rgb(237,226,27);
-
-new orange: rgb(240,190,26);
-
+darker blue: rgb(38,173,228);
 
 ***/
 
@@ -29,9 +18,11 @@ html {
 }
 body {    
   margin-bottom: 60px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-
+p {
+  font-size: 18px;
+}
 .container {
   margin-bottom: 60px;
 }
@@ -41,16 +32,16 @@ body {
 
 /*** NAVIGATION BAR ***/
 .navbar-default {
-  background-color: rgb(0,214,221);
+  background-color: rgb(77,188,233);
 } 
 .navbar-default .navbar-nav li a, .navbar-brand {
   line-height: 20px;
   color: white;
   font-size: 20px;
-  font-family: 'Londrina Solid', cursive;
+  font-family: 'Roboto', cursive;
 }
 .navbar-default .navbar-brand {
-  font-family: 'Londrina Solid', cursive;
+  font-family: 'Roboto', cursive;
   font-size: 50px;
   color: white;
 }
@@ -60,7 +51,7 @@ body {
 
 /*** MAIN HOMEPAGE ***/
 #enya {
-  color: rgb(230,76,60);
+  color: rgb(209,231,81);
 }
 #home-header, .home-h2 {
   font-size: 3em;
@@ -83,22 +74,22 @@ body {
 .page-header h1, .personal-header h1{
   text-align: center;
   padding-top: 100px;
-  font-family: 'Londrina Solid';
+  font-family: 'Roboto';
   font-size: 5em;
 }
 .page-header h3{
   text-align: center;
   font-size: 2em;
-  font-family: 'Londrina Solid';
+  font-family: 'Roboto';
 }
 .home-boxes p {
-  border-left: 3px solid rgb(230,76,60);
+  border-left: 3px solid rgb(209,231,81);
   padding-left: 10px;
   font-size: 20px;
 }
 .home-h2{
-  font-family: 'Londrina Solid';
-  color: rgb(0,150,230);
+  font-family: 'Roboto';
+  color: rgb(38,173,228);
 }
 .popup-text {
   color: #337ab7;
@@ -109,12 +100,12 @@ body {
   padding: 5px;
 }
 .fa-star {
-  color: rgb(230,76,60);
+  color: rgb(209,231,81);
 }
 
 /*** FOOTER ***/
 .footer {
-  background-color: rgb(0,214,221);
+  background-color: rgb(77,188,233);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -139,45 +130,26 @@ body {
   font-size: 20px;
 }
 #portfolio-h1 {
-  color: rgb(230,76,60);
+  color: rgb(0,0,0);
   padding-top: 0px;
 }
-
 .portfolioTitle {
   font-size: 2em;
-  color: rgb(0,150,230);
-  font-family: 'Londrina Solid';
+  color: rgb(38,173,228);
+  font-family: 'Roboto';
 }
-
 .portfolio-images {
   max-height: 150px;
   max-width: 150px;
   cursor: pointer;
 }
-
-.label-danger /*css*/ {
-  background-color: rgb(0,150,230);
-  color: white;
+.label-danger, .label-warning, .label-success, .label-primary, .label-info {
+  background-color: rgb(209,231,81);
+  color: rgb(0,0,0);
+  font-size: 13px;
 }
-
-.label-warning /*javascript*/{
-  background-color: rgb(230,76,60);
-}
-
-.label-success /*html*/ {
-  background-color: rgb(113,194,133);
-}
-
-.label-primary /*jquery*/ {
-  background-color: rgb(240,190,26);
-}
-
-.label-info /*laravel*/{
-  background-color: 
-}
-
 .portfolio-button, .portfolio-button:hover {
-  background-color: rgb(253,247,255);
+  background-color: rgb(255,255,255);
   border-radius: 0;
   color: rgb(255,93,201);
   border: 3px solid rgb(255,93,201);
@@ -188,40 +160,32 @@ body {
   margin-top: 10%;
 }
 .page-header .post-index-h1 {
-  color: rgb(230,76,60);
+  color: rgb(0,0,0);
   padding-top: 0px;
   margin: 0px;
 }
 .blogPost {
   background: #fff;
-  border-top: 20px solid rgb(113,194,133);
+  border-top: 20px solid rgb(209,231,81);
   margin: 0 auto 2em auto;
   padding: 35px 30px;
   box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.3);
 }
-
 .postContent{
   font-size: 18px;
-  border-left: 5px solid rgb(237,226,27);
   padding-left: 15px;
 }
-
 .postTitle {
   font-size: 2.5em;
   margin-top: 5px;
-  overflow: hidden;
   border: none;
-  font: normal 70px/1 "Londrina Solid", Helvetica, sans-serif;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  text-shadow: 5px 5px 0 rgb(104,119,108);
+  font-family: 'Roboto' sans-serif;
 }
 .postTitleLinks {
   color: rgb(0,150,230);
 }
 a.postTitleLinks:hover{
   color: rgb(0,150,230);
-  text-shadow: 5px 5px 0 rgba(104,119,108,0.7);
   text-decoration: none;
 }
 .postLink {
@@ -239,15 +203,17 @@ a.postTitleLinks:hover{
 #showSinglePost {
   text-align: center;
   margin-top: 5%;
-  border-top: 20px solid rgb(230,76,60);
-  border-bottom: 20px solid rgb(230,76,60);
+  border-top: 20px solid rgb(209,231,81);
+  border-bottom: 20px solid rgb(255,255,255);
 }
 .italic {
   font-style: italic;
 }
 .post-content {
   font-size: 20px;
-
+}
+.singlepost-h1, #writtenby {
+  color: rgb(38,173,228);
 }
 
 /*PERSONAL CSS */
@@ -261,8 +227,12 @@ a.postTitleLinks:hover{
   margin-bottom: 0;
   padding: 5px;
 }
+#personal-h1 {
+  padding-top: 0px;
+  padding-bottom: 100px;
+}
 .personal-h3 {
-  font-family: 'Londrina Solid';
+  font-family: 'Roboto';
   color: white;
   font-size: 2em;
 }
@@ -277,16 +247,13 @@ a.postTitleLinks:hover{
   margin-bottom: 10px;
 }
 .personal-coding {
-  background-color: rgb(0,150,230);
+  background-color: rgb(38,173,228);
 }
-.personal-gaming {
-  background-color: rgb(237,226,27);
+.personal-meetup {
+  background-color: rgb(209,231,81);
 }
-.personal-fitness {
-  background-color: rgb(113,194,133);
-}
-.personal-music {
-  background-color: rgb(230,76,60);
+.personal-self {
+  background-color: rgb(38,173,228);
 }
 
 /*** LOGIN & SIGNUP ***/
@@ -331,7 +298,6 @@ label {
 .create-post {
   border: none;
 }
-
 /** PROFILE **/
 .username {
   color: rgb(230,76,60);
@@ -342,3 +308,4 @@ label {
 #profile-container {
   text-align: center;
 }
+
