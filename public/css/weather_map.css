@@ -1,0 +1,66 @@
+/* COLOR PALETTE
+
+dark blue: rgb(68,116,157);
+
+light blue: rgb(198,212,225);
+
+white: rgb(255,255,255);
+
+light grey: rgb(235,231,224);
+
+browin grey: rgb(189,184,173);
+
+*/
+
+body {
+    text-align: center;
+}
+#wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.container-fluid {
+    background-color: rgb(198,212,225);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px; 
+}
+.container-fluid .page-header {
+    border-bottom: 0px;
+}
+.container-fluid h1, .container-fluid h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+}
+span {
+    color: rgb(68,116,157);
+}
+/* MAP CSS */
+#map-canvas {
+    height: 481px;
+    margin: 0 auto;
+    width: 800px;
+}
+/* WEATHER BOXES */
+.weather-boxes {
+    background-color: white;
+    border-top: 2px solid rgb(68,116,157);
+    border-bottom: 2px solid rgb(68,116,157);
+    margin-bottom: 20px;
+}
+/* SEARCH BOX */
+.form1 {
+    margin-bottom: 20px;
+}
+.search-city {
+    width: 250px;
+    height: 40px;
+}
+.btn {
+    background-color: rgb(235,231,224);
+    color: rgb(189,184,173);
+    width: 100px
+}
+/* LAT LNG */
+#latlong {
+    margin-top: 20px;
+}

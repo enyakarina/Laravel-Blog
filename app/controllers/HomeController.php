@@ -61,4 +61,9 @@ class HomeController extends BaseController {
 		return View::make('posts.home');
 	}
 
+	public function showWeather()
+	{
+		return View::make('weather');
+	}
+
 }

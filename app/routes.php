@@ -58,3 +58,5 @@ Route::get('/calculator', 'HomeController@showCalculator');
 
 #Blog Post Home
 Route::get('/blog', 'HomeController@blogHome');
+#Weather
+Route::get('/weather', 'HomeController@showWeather');

@@ -40,7 +40,7 @@ Kari's Portfolio
         <a href="/calculator"><img src="/images/calculator.png" alt="calculator" class="portfolio-images"></a>
           <div class="caption">
             <a href="/calculator"><h3 class="portfolioTitle">JavaScript Calculator</h3></a>
-            <p>This is a simple calculator coded in vanilla javascipt</p>
+            <p>This is a simple calculator coded in vanilla JavaScript.</p>
             <span class="label label-warning">JavaScript</span> <span class="label label-success">HTML5</span> <span class="label label-danger">CSS3</span></p>
           </div>
         </div>
