@@ -5,17 +5,17 @@
 @stop
 
 @section('content')
-    <div class="container postIndex col-lg-12 col-md-12 col-xs-12">
-    <div class="page-header posts-index-header">
-        <h1 class="post-index-h1">All Blog Posts</h1>
-    </div>
-    @foreach($posts as $post)
-    <div class="blogPost">
-        <h1 class="postTitle"><a href="{{{action('PostsController@show', $post->id) }}}" class="postTitleLinks">{{{ $post->title }}}</a></h1>
-        <p class="postContent">{{ Str::limit($post->content, 450) }} <a class="postLink" href="{{{ action('PostsController@show', $post->id) }}}">Read more</a></p>
-        <p class="datePosted"><small>Posted on: {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A') }}}</small></p>
-    </div>
-    @endforeach
+<div class="container post-index">
+    <h1 class="teal-text">&lt;all posts&gt;</h1>
+    <div class="row blog-row">
+        @foreach($posts as $post)
+        <div class="blog-post col-xs-12 col-md-12 col-lg-12">
+            <h2 class="salmon-text"><a href="{{{action('PostsController@show', $post->id) }}}" class="post-title">{{{ $post->title }}}</a></h2>
+            <p class="post-content">{{ Str::limit($post->content, 450) }} <a class="post-link" href="{{{ action('PostsController@show', $post->id) }}}"> <br>Read more</a></p>
+            <p class="date-posted"><small>Posted on: {{{ $post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A') }}}</small></p>
+        </div>
+        @endforeach
         {{ $posting->links() }}
     </div>
+</div>
 @stop

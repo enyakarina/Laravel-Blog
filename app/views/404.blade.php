@@ -8,8 +8,8 @@ Wrong Turn!
 <div class="container-fluid">
     <div class="container">
     <div id='blog-jumbo' class='jumbotron'>
-        <h1>This page doesn't seem to exist </h1>
-        <h2>404 Error!</h2>
+        <h1 class="teal-text">This page doesn't seem to exist </h1>
+        <h2 class="red-text">404 error!</h2>
         <small>Please stop trying to break things...</small>
     </div>
     </div>

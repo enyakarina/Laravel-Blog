@@ -6,38 +6,31 @@
 
 @section('content')
 
-<div class="container-fluid homepage-container">
-    <div class="page-header col-lg-12">
-        <h1 id="home-header col-lg-12">Hello, I'm <span id="enya">Enya</span> Palomino.</h1>
-        <h3 id="home-sub">Welcome to my page!</h3>
-    </div>
-    <div class="col-xs-12 col-md-6 col-lg-6" id="contentOne">
-        <div class="homepage-content">
-            <div class="home-boxes">
-            <h2 class="home-h2">About Me</h2>
-            <p>I am a 22 year old living in Texas who is  looking to transition into the world of web development. I started my coding journey fairly recently, in March 2016. Prior to this I had been attending college while working part time in food service.
-            <br>
-            <br>
-            I learned to code by attending an intense program where I learned to build websites and web applications at a rapid pace. It has been one of the most rewarding things I have done for myself. I love to code, and I will continue learning and growing.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-lg-6" id="contentTwo">
-        <div class="homepage-content">
-            <div class="home-boxes">
-            <h2 class="home-h2">Contact</h2>
-            <ul class="contact-list">
-            <li><i class="fa fa-star" aria-hidden="true"></i> Feel free to {{ HTML::mailto('enyakpalomino@gmai.com', 'send me an email') }}
-            </li>
-            <li>
-                <i class="fa fa-star" aria-hidden="true"></i> Check out my <a href="http://github.com/enyakarina">github</a>
-            </li>
-            <li>
-                <i class="fa fa-star" aria-hidden="true"></i> Send me a text @ <span class="popup-text">(210) 412-0292</span>
-            </li>
-            </div>
-        </div>
-    </div>
+<div class="homepage-wrapper">
+  <div class="container-fluid homepage-container">
+      <div class="row">
+          <div class="col-xs-12">
+              <h1 class="teal-text">My name is Kari Palomino</h1>
+              <h3>I'm a 23 year old web developer based in Texas.</h3>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid about-me">
+      <div class="row">
+         <div class="col-xs-12 col-md-5 about">
+             <h2 class="salmon-text">&lt;about me&gt;</h2>
+             <p>I've been a <span class="teal-text">web developer</span> for a little over a year. It took me around 4 months (500+ hrs of coding) to familiarize myself with the LAMP stack.</p>
+             <p> In October 2016, I took a job at a <span class="teal-text">coding academy</span> where I spent my time helping adults learn the basics of web development.</p> 
+             <p>I realized that with teaching, you give others a piece of your knowledge, and in return you gain something valuable: <span class="salmon-text">reinforcement.</span></p>
+         </div>
+         <div class="col-xs-12 col-md-offset-1 col-md-6 contact">
+             <h2 class="salmon-text">&lt;contact and social&gt;</h2>
+             <p><i class="fa fa-github-alt fa-3x teal-text" aria-hidden="true"></i></p>
+             <p><i class="fa fa-linkedin fa-3x red-text" aria-hidden="true"></i></p>
+             <p><i class="fa fa-codepen fa-3x teal-text" aria-hidden="true"></i></p>
+             <p><i class="fa fa-twitter fa-3x red-text" aria-hidden="true"></i></p>
+         </div> 
+      </div>
+  </div>
 </div>
 @stop

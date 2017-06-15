@@ -20,7 +20,7 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		$posts = Post::orderBy('id', 'DESC')->get();
-		$posting = Post::paginate(10);
+		$posting = Post::paginate(3);
 		return View::make('posts.index')->with(['posts' => $posts, 'posting' => $posting]);
 	}
 

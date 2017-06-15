@@ -13,9 +13,6 @@
 #Home
 Route::get('/', 'HomeController@showWelcome');
 
-#Personal Page
-Route::get('/personal', 'HomeController@showPersonal');
-
 #Portfolio Page
 Route::get('/portfolio', 'HomeController@showPortfolio');
 
@@ -27,9 +24,9 @@ Route::post('/login', 'UsersController@userLogin');
 Route::get('/login', 'UsersController@showLogin');
 Route::get('/logout', 'UsersController@userLogout');
 
-#Registration
-Route::get('/signup', 'UsersController@showSignup');
-Route::post('/signup', 'UsersController@userSignup');
+// #Registration
+// Route::get('/signup', 'UsersController@showSignup');
+// Route::post('/signup', 'UsersController@userSignup');
 
 #Profile
 Route::get('/users/{profile}', 'ProfilesController@showProfile');

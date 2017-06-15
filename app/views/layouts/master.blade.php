@@ -12,16 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <!--Favicon-->
-    <link rel="icon" type="image/x-icon"  href="/images/favicon.ico">
-    <!-- Latest compiled and minified CSS -->
+    <!-- BOOTSTRAP - Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!--GOOGlE FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
     <!-- FONT AWESOME ICONS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- CUSTOM CSS FILE -->
@@ -73,7 +67,7 @@
 
 <!--jquery-->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
+<!-- BOOTSTRAP - Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="/js/main.js"></script>
 <!--TINY EMC-->

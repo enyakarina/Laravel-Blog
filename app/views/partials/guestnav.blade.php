@@ -8,14 +8,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">KP</a>
+      <a class="navbar-brand" href="/"><img src="/images/heart.svg" alt="heart icon">KP!</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" aria-expanded="true">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
-        <li><a href="/personal">Personal</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
         <li><a href="/posts">Blog</a></li>
       </ul>
