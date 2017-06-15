@@ -25,10 +25,10 @@
          </div>
          <div class="col-xs-12 col-md-offset-1 col-md-6 contact">
              <h2 class="salmon-text">&lt;contact and social&gt;</h2>
-             <p><i class="fa fa-github-alt fa-3x teal-text" aria-hidden="true"></i></p>
+             <p><a href="https://github.com/enyakarina"><i class="fa fa-github-alt fa-3x teal-text" aria-hidden="true"></i></a></p>
              <p><i class="fa fa-linkedin fa-3x red-text" aria-hidden="true"></i></p>
-             <p><i class="fa fa-codepen fa-3x teal-text" aria-hidden="true"></i></p>
-             <p><i class="fa fa-twitter fa-3x red-text" aria-hidden="true"></i></p>
+             <p><a href="https://codepen.io/kari226/"><i class="fa fa-codepen fa-3x teal-text" aria-hidden="true"></i></a></p>
+             <p><a href="https://twitter.com/codekari"><i class="fa fa-twitter fa-3x red-text" aria-hidden="true"></i></a></p>
          </div> 
       </div>
   </div>

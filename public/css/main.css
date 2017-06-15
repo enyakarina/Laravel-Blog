@@ -105,12 +105,11 @@ p {
 }
 /* Blog Index */
 .blog-row {
-  width: 55rem;
   margin: 0 auto;
 }
 .blog-post {
   background-color: white;
-  height: 55rem;
+  height: auto;
   margin-bottom: 2rem;
   padding-top: 8rem;
   border: 1rem solid #62C0C2;
@@ -131,7 +130,6 @@ p {
   padding: 2rem;
 }
 .single-post {
-  width: 60rem;
   margin: 0 auto;
 }
 #single-post {
