@@ -3,90 +3,89 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
-#calculator {
-  height: 350px;
-  width: 450px;
-  margin: 50px auto 0 auto;
-  background-color: #99ccff;
-  border-radius: 10px;
-  border-bottom: 5px solid #42729B;
-  border-right: 5px solid #42729B;
-  padding: 50px 10px 260px 10px;
-  font-family: monospace;
-  font-size: 1.5em;
+html {
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
 }
-
-#title {
-  margin-top: -30px;
-  text-align: center;
-  color: #061B4E;
-  font-size: 1.5em;
-  
+body {
+  margin-top: 10rem;
+  background-color: #2D3E50;
 }
-
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.calculator-body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 5.3rem;
+  font-weight: bold;
+}
+.result-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .result {
-  width: 305px;
-  margin: 5px;
-  height: 40px;
-  float: left;
-  line-height: 40px;
-  font-size: 30px;
-  background-color: #ffffcc;
-  border-radius: 5px;
+  width: 70%;
+  height: 7rem;
+  line-height: 5rem;
+  text-align: right;
+  padding: 1rem;
+  font-size: 5rem;
+  background-color: #ECF0F1;
+  overflow: auto;
+  border-radius: 1rem;
+  color: #E77E22;
+  margin-right: 2rem;
 }
-
-.clear,
-span {
-  height: 40px;
-  border-bottom: 3px solid grey;
-  border-radius: 10px;
-  color: #2c3e50;
-  background-color: #F2F2F2;
-  text-align: center;
-  line-height: 40px;
-  cursor: pointer;
-  margin:5px;
-}
-
 .clear {
-  width: 95px;
-  float: left;
-  background-color: #ff99ff;
-  color: #fff;
-  border-color: #A63125;
+  width: 10%;
+  line-height: -4rem;
+  color: #E84C3D;
+  cursor: pointer;
+  text-align: right;
 }
-
+.c {
+  display: inline;
+}
+.buttons {
+  width: 97%;
+  height: auto;
+  margin: 0 auto; 
+}
 span {
-  width: 95px;
-  float: left; 
-}
-
-span:hover {
-  background-color: #D4D4D4;
-  } 
-
-.clear:hover {
-  background-color: #ff33ff;
-}
-
-.op {
-  background-color: #b3ffb3;
-}
-
-.op:hover {
-  background-color: #80ff80;
-}
-
-.ev {
-  background-color: #cc99ff;
-}
-
-.ev:hover {
-  background-color: #b366ff;
-}
-
-p {
+  display: block;
+  width: 20%;
+  float: left;
+  margin: 0.65rem;
+  cursor: pointer;
+  color: white;
   text-align: center;
+}
+span:nth-child(4n+1){
+  clear: left;
+}
+.op {
+  color: #297FB8;
+}
+.decimal {
+  color: #F1C50E;
+}
+.ev {
+  color: #2DCC70;
+}
+.back {
+  font-size: 2rem;
+  clear: right;
+  clear: left;
+  text-align: center;
+  margin-top: 1rem;
+}
+.back a {
+  text-decoration: none;
+  color: #9A59B5;
 }

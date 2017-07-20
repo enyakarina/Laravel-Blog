@@ -33,7 +33,7 @@ Kari's Portfolio
       <div class="project col-xs-12 col-md-6 col-lg-6">
         <div>
           <figure>
-            <a href="/calculator"><img src="/images/calculator.png" class="img-responsive project-pic" alt="picture of a javascript calculator made by kari palomino"></a>
+            <a href="/calculator"><img src="/images/newCalculator.png" class="img-responsive project-pic" alt="picture of a javascript calculator made by kari palomino"></a>
           </figure>
         </div>
         <h3>vanilla javascript<span class="salmon-text"> calculator</span></h3>
